@@ -1,55 +1,74 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+### Site Settings ###
+title               : Nathan Morin
+description         : >-                               # >- means to ignore newlines until "url:"
+                      Hi, I'm Nathan Morin. I am a technologist from Indiana who loves working 
+                      at the intersection between great user design and innovative computer technology. 
+                      I am interested in using my skills to solve the complex problems we face, 
+                      believing innovative technology can alleviate many of our most pressing social problems. 
+                      In particular, I believe recent increases in the availability of data and processing
+                       capabilites present oportunities to automate decision making processes while greatly 
+                       expanding the places where we can cost effectively apply inteligent analysis.
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+                      I graduated Purdue University majoring in Computer & Information Technology, 
+                      minoring in Statistics in 2017 and now work at Eli Lilly. 
+                      In my spare time I enjoy travel/photography, coding side projects, 
+                      and working on my cars.
 
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+url                 : ""                               # base hostname & protocol for your site (e.g. http://example.com)
+baseurl             : ""                    # subpath of your site (e.g. /blog) [IMPORTANT: use "" if your are hosting at https://username.github.io directly]
+repository          : nathanamorin/nathanamorin.github.io    # repository metadata on GitHub Pages [know more at https://help.github.com/en/articles/repository-metadata-on-github-pages]
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+### Author Info ###
+author:
+  name              : Nathan Morin
+  image             : /assets/me.jpg
+#  behance           : your_username
+# dribbble          : your_username
+  email             : contact@nathanmorin.com
+#  facebook          : your_username
+  github            : nathanamorin
+# gitlab            : your_username
+# instagram         : your_username
+  linkedin          : nathanmorin
+#  medium            : your_username
+# soundcloud        : your_username
+# spotify           : your_username
+# stackoverflow     : your_user_id
+# tumblr            : your_username.tumblr.com
+# twitch            : your_username
+  twitter           : nathanamorin
+# vimeo             : your_username
+# youtube           : your_channel_name
+
+
+### Pagination ###
+paginate: 6
+paginate_path: "/articles/page-:num/"
+
+
+### Posts Permalink ###
+permalink: articles/:title
+
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+
+
+### Exclude from processing ###
+exclude:
+- README.md
+- LICENSE
+- Gemfile
+- Gemfile.lock
