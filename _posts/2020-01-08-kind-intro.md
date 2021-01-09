@@ -1,15 +1,15 @@
 ---
-title: Intro to Kind
-tags: [K8s, Kubernetes, Kind, Local Kubernetes]
+title: Intro to Kind Kubernetes (Local Kubernetes Development) - Part 1
+tags: [K8s, Kubernetes, Kind, LocalKubernetes]
 style: fill
 color: primary
-description: Kind Series: Part 1 - Introduction (installation & first config)
+description: Intro to Kind Kubernetes (Local Kubernetes Development) - Part 1 - Introduction (installation & first config)
 ---
 
 
-# Intro to Kind
+# Intro to Kind Kubernetes
 
-This guide walks through the basics getting kind installed & configured.  For your specific environment jump to to the Linux (Ubuntu), Mac, or Windows Sections.
+This guide walks through the basics getting Kind Kubernetes installed & configured.  For your specific environment jump to to the Linux (Ubuntu), Mac, or Windows Sections.
 
 
 
