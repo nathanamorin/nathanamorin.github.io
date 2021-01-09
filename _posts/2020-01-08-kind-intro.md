@@ -18,7 +18,7 @@ This guide walks through the basics getting Kind Kubernetes installed & configur
 Ubuntu Version: ```Ubuntu 18.04.4 LTS```
 
 Prerequisites:
-+ Docker (see https://docs.docker.com/get-docker/)
++ Docker ([Get Docker](https://docs.docker.com/get-docker/))
 
 Download Kind Binary & move to location in your PATH
 ````bash
@@ -43,7 +43,7 @@ kind creae cluster
  ✓ Installing StorageClass 💾
  ```
 
-To interact with the kubernetes cluster, install the kubernetes CLI.  On Ubuntu 18, this can be done with a snap.  For more install options, see https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-linux
+To interact with the kubernetes cluster, install the kubernetes CLI.  On Ubuntu 18, this can be done with a snap.  For more install options, see [Kubernetes Docs](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-linux)
 
 Run:
 ```
