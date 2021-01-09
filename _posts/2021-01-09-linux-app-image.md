@@ -50,3 +50,9 @@ sudo apt-get install appimagelauncher
 ```
 
 Once this is installed, when you first open an AppImage file, it will prompt to integrate with your desktop.
+
+If you wish the application to show up in file open menus, you will need to modify the ```.desktop``` file that is created when the application is registered.
+
+With Gnome, this file is located in ```~/.local/share/applications```.
+
+You will need to find the line starting with ```Exec``` & append the following ```%F```.  This will tell the launcher the application can accept files & will show the application in the file open menu.
