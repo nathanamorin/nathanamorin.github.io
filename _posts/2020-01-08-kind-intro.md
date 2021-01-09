@@ -31,7 +31,7 @@ The first time you create a kind Kubernetes cluster, it will take a couple minut
 
 Run:
 ```bash
-kind creae cluster
+kind create cluster
 ```
  ```bash
  Creating cluster "kind" ...
