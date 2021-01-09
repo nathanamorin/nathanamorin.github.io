@@ -1,5 +1,17 @@
+---
+title: Home Lab - Joining Linux computer to Windows domain with Centrify Express
+tags: [Linux, HomeLab, AD, ActiveDirectory, Centrify, CentrifyExpress]
+style: fill
+color: primary
+description: Home Lab - Instructions for installing Centrify Express agent on Linux host & joining host to Windows Active Directory Domain
+---
 
 # Home Lab Active Directory Configuration
+
+This guides walks through the process of setting up a Centrify Express agent.  Centrify makes joining a 
+Linux server to a Windows AD domain simple.  The Centrify Express agent is the free agent from Centrify
+which allows up to 200 agents for free.  With the Centrify Express installer, this can be done with
+the provider automated script.
 
 ## Centrify Express
 
@@ -138,3 +150,7 @@ You may need to restart other services that rely upon PAM and NSS or simply
 reboot the computer for proper operation.  Failure to do so may result in
 login problems for AD users.
  ```
+ 
+ With these options, the script will auto reboot the machine.  This ensures all the services relying on the auth / domain service are restarted.
+ 
+ After the reboot, you should be able to login to your Linux machine using AD Users.
