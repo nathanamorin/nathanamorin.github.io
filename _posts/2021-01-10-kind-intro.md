@@ -78,6 +78,14 @@ kind-control-plane   Ready    master   15m   v1.19.1
 
 You how have a running local Kubernetes cluster!
 
+To cleanup the cluster, run:
+```
+kind delete cluster
+```
+```
+Deleting cluster "kind" ...
+```
+
 ## Mac
 
 Prerequisites:
@@ -129,6 +137,14 @@ kind-control-plane   Ready    master   100s   v1.19.1
 ```
 
 You how have a running local Kubernetes cluster!
+
+To cleanup the cluster, run:
+```
+kind delete cluster
+```
+```
+Deleting cluster "kind" ...
+```
 
 
 ## Windows
