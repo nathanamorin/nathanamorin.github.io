@@ -6,9 +6,15 @@ color: primary
 description: Intro to Kind Kubernetes (Local Kubernetes Development) - Part 1 - Introduction (installation & first config)
 ---
 
-A locally running Kubernetes cluster is a valuable tool to both easily learn & experiment with Kuberntes, but also develop new Kuberntes configurations without needing to deploy a Kubernetes cluster to a Cloud provider / hosting stack.  Additionally, for developer teams, it allows each developer to experiment on their own local Kubernetes cluster rather than using a shared cluster with the inherent disruption of multiple developers experimenting on the same cluster.  Finally, In your CI runs, having a local Kubernetes cluster provides the oportunity to test kubernetes deployments within your CI environment whithout deploying a full Kubernetes cluster.  This allows for more testing earlier in the development cycle while also reducing the time & cost to test as spining a full kubernetes cluster in a cloud provider takes much more time & costs significantly more.
+A locally running Kubernetes cluster is a valuable tool to both easily learn & experiment with Kuberntes, but also develop new Kuberntes configurations without needing to deploy a Kubernetes cluster to a Cloud provider / hosting stack.  
 
-There are a few other easily installable Kubernetes projects such as MicroK8s, K3s (Rancher) or MiniKube.  If you are setting up a home lab, MicroK8s or K3s would make the most sence.  MiniKube & Kind (this guide) are focused around local development & testing.  Kind sets itself apart from MiniKube with it's focus on running Kubernetes in docker (MiniKube now supports this as well), along with its support for multi node HA clusters (all running locally). 
+Additionally, for developer teams, it allows each developer to experiment on their own local Kubernetes cluster rather than using a shared cluster with the inherent disruption of multiple developers experimenting on the same cluster.  
+
+Finally, In your CI runs, having a local Kubernetes cluster provides the oportunity to test kubernetes deployments within your CI environment whithout deploying a full Kubernetes cluster.  This allows for more testing earlier in the development cycle while also reducing the time & cost to test as spining a full kubernetes cluster in a cloud provider takes much more time & costs significantly more.
+
+There are a few other easily installable Kubernetes projects such as MicroK8s, K3s (Rancher) or MiniKube.  If you are setting up a home lab, MicroK8s or K3s would make the most sence.  MiniKube & Kind (this guide) are focused around local development & testing.  
+
+Kind sets itself apart from MiniKube with it's focus on running Kubernetes in docker (MiniKube now supports this as well), along with its support for multi node HA clusters (all running locally). 
 
 This guide walks through the basics getting Kind Kubernetes installed & configured.  For your specific environment jump to to the Linux (Ubuntu), Mac, or Windows Sections.
 
