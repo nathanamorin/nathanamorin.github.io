@@ -6,6 +6,9 @@ color: primary
 description: Intro to Kind Kubernetes (Local Kubernetes Development) - Part 1 - Introduction (installation & first config)
 ---
 
+* TOC
+{:toc}
+
 A locally running Kubernetes cluster is a valuable tool to both easily learn & experiment with Kuberntes, but also develop new Kuberntes configurations without needing to deploy a Kubernetes cluster to a Cloud provider / hosting stack.  
 
 Additionally, for developer teams, it allows each developer to experiment on their own local Kubernetes cluster rather than using a shared cluster with the inherent disruption of multiple developers experimenting on the same cluster.  
