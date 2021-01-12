@@ -116,8 +116,8 @@ service/bar-service created
 ```
 
 You can view these services by accessing:
-[http://localhost/bar](http://localhost/bar)
-[http://localhost/foo](http://localhost/foo)
++ [http://localhost/bar](http://localhost/bar)
++ [http://localhost/foo](http://localhost/foo)
 
 
 Comming Soon (example 3 teir web app)
@@ -125,7 +125,7 @@ Comming Soon (example 3 teir web app)
 
 
 Resources:
-+ https://kind.sigs.k8s.io/docs/user/ingress/
-+ https://kind.sigs.k8s.io/docs/user/quick-start/
-+ https://github.com/kubernetes/ingress-nginx
++ [https://kind.sigs.k8s.io/docs/user/ingress/](https://kind.sigs.k8s.io/docs/user/ingress/)
++ [https://kind.sigs.k8s.io/docs/user/quick-start/](https://kind.sigs.k8s.io/docs/user/quick-start/)
++ [https://github.com/kubernetes/ingress-nginx](https://github.com/kubernetes/ingress-nginx)
 
