@@ -197,7 +197,7 @@ kubectl get nodes
 ```
 ```
 NAME                 STATUS   ROLES    AGE    VERSION
-kind-control-plane   Ready    master   100s   v1.19.1
+kind-control-plane   Ready    master   3m20s   v1.19.1
 ```
 
 You how have a running local Kubernetes cluster!
