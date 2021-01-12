@@ -6,9 +6,6 @@ color: primary
 description: Intro to Kind Kubernetes (Local Kubernetes Development) - Part 1 - Introduction (installation & first config)
 ---
 
-* TOC
-{:toc}
-
 A locally running Kubernetes cluster is a valuable tool to both easily learn & experiment with Kuberntes, but also develop new Kuberntes configurations without needing to deploy a Kubernetes cluster to a Cloud provider / hosting stack.  
 
 Additionally, for developer teams, it allows each developer to experiment on their own local Kubernetes cluster rather than using a shared cluster with the inherent disruption of multiple developers experimenting on the same cluster.  
@@ -20,6 +17,9 @@ There are a few other easily installable Kubernetes projects such as MicroK8s, K
 Kind sets itself apart from MiniKube with it's focus on running Kubernetes in docker (MiniKube now supports this as well), along with its support for multi node HA clusters (all running locally). 
 
 This guide walks through the basics getting Kind Kubernetes installed & configured.  For your specific environment jump to to the Linux (Ubuntu), Mac, or Windows Sections.
+
+* TOC
+{:toc}
 
 
 ## Linux (Ubuntu) Install & Setup
