@@ -149,4 +149,63 @@ Deleting cluster "kind" ...
 
 ## Windows
 
-(comming soon)
+Prerequisites:
++ Docker ([Get Docker](https://docs.docker.com/get-docker/))
+
+Windows installation is simplified greatly by Chocolatey (the Windows package manager).  If you haven't already, see [Chocolatey installation](./windows-chocolatey).
+
+Once Chocolatey is installed, run the below to isntall Kind.
+
+```
+choco install kind
+```
+
+The first time you create a kind Kubernetes cluster, it will take a couple minutes to download the docker images.
+
+Run:
+```bash
+kind create cluster
+```
+ ```bash
+ Creating cluster "kind" ...
+ ✓ Ensuring node image (kindest/node:v1.19.1) 🖼 
+ ✓ Preparing nodes 📦  
+ ✓ Writing configuration 📜 
+ ✓ Starting control-plane 🕹️ 
+ ✓ Installing CNI 🔌 
+ ✓ Installing StorageClass 💾
+ ```
+
+
+Install the Kubernetes CLI by running the following:
+```
+choco install kubernetes-cli
+```
+
+If you have multiple Kubernetes configurations on your machine, run the below command to set your Kubernetes context to use the Kind config.
+```
+kubectl config set-context kind-kind
+```
+```
+Context "kind-kind" modified.
+```
+
+
+Verify the cluster is running by listing the cluster nodes
+```
+kubectl get nodes
+```
+```
+NAME                 STATUS   ROLES    AGE    VERSION
+kind-control-plane   Ready    master   3m20s   v1.19.1
+```
+
+You how have a running local Kubernetes cluster!
+
+To cleanup the cluster, run:
+```
+kind delete cluster
+```
+```
+Deleting cluster "kind" ...
+```
