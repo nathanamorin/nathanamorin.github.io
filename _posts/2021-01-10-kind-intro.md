@@ -22,7 +22,7 @@ This guide walks through the basics getting Kind Kubernetes installed & configur
 {:toc}
 
 
-## Linux (Ubuntu) Install & Setup
+## Linux (Ubuntu)
 
 Ubuntu Version: ```Ubuntu 18.04.4 LTS```
 
