@@ -7,6 +7,7 @@ description: Tips & tricks for using Visual Studio Code
 ---
 
 
+## VS Code in Docker
 VS Code has a very useful feature which allows you to run your code inside a docker container.  It handles starting / mounting your code to a Docker container & seamlessly integrating the termainal / debug features.
 
 
