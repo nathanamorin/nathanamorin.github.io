@@ -34,4 +34,4 @@ Instead of starting with public images, you can also build your own docker image
 
 
 References:
-+ https://code.visualstudio.com/docs/remote/containers
++ <https://code.visualstudio.com/docs/remote/containers>
