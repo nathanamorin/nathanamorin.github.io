@@ -120,8 +120,102 @@ You can view these services by accessing:
 + [http://localhost/foo](http://localhost/foo)
 
 
-Comming Soon (example 3 teir web app)
+In order to demonstrate the end to end workflow, this guide will walk through a very simple app deployment.  This app will just return the number of requests recieved.  The container will be built locally & deployed in Kind.  Network ingress will come through the ingress setup previously.
 
+The first step is to create a docker image with the required dependencies.  For simplicity in the demo, I've included the docker file inline in the docker build command below.
+
+```
+echo '''
+FROM python
+RUN pip install flask requests''' | docker build -t k8s_demo:local -f - .
+```
+
+To push the docker image to Kind, run ```kind load docker-image k8s_demo:local```.  This makes the docker image available in the Kind k8s cluster.
+
+Then, run the following command to deploy a container with the config to Kind:
+
+```
+echo '''
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-api
+data:
+  run.py: |
+    from flask import Flask
+    app = Flask(__name__)
+    num_requests = 0
+    @app.route("/api")
+    def count():
+        global num_requests
+        num_requests += 1
+        return(str(num_requests))
+
+    if __name__ == "__main__":
+        app.run(host="0.0.0.0")
+---
+kind: Pod
+apiVersion: v1
+metadata:
+  name: demo
+  labels:
+    app: demo
+spec:
+  containers:
+  - name: demo
+    image: k8s_demo:local
+    command: ["python"]
+    args: [ "/app/run.py" ]
+    imagePullPolicy: IfNotPresent
+    volumeMounts:
+    - name: config
+      mountPath: /app
+  volumes:
+    - name: config
+      configMap:
+        name: demo-api
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: demo
+spec:
+  selector:
+    app: demo
+  ports:
+  - port: 5000
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: demo
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /api
+        pathType: Exact
+        backend:
+          service:
+            name: demo
+            port:
+              number: 5000
+
+''' | kubectl apply -f -
+```
+
+```
+configmap/demo-api created
+pod/demo created
+service/demo created
+ingress.networking.k8s.io/demo created
+```
+
+You can view the resources created by running ```kubectl describe <either ingress,pod,or configmap>```.  
+
+Once the pod starts, you can view the app by opening: [http://localhost/api](http://localhost/api) which returns the request count.
+
+Finally, to cleanup & delete the cluster, run ```kind delete cluster```
 
 
 Resources:
