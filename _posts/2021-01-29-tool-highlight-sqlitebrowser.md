@@ -6,6 +6,7 @@ color: primary
 description: Series that highlights developer tools (DB Browser for SQLite) 
 ---
 
+## SQLite
 DB Browser for SQLite allows easy exploration of SQLite DBs.  It's open source & avaialble for Linux, Mac & Windows.
 
 [Installation Instructions](https://sqlitebrowser.org/dl/)
