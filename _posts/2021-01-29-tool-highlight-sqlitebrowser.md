@@ -1,9 +1,9 @@
 ---
-title: Tool Highlight: DB Browser for SQLite
+title: Tool Highlight - DB Browser for SQLite
 tags: [ToolHighlight, sqlitebrowser]
 style: fill
 color: primary
-description: Series that highlights developer tools (DB Browser for SQLite) 
+description: Series that highlights developer tools (DB Browser for SQLite)
 ---
 
 ## SQLite
