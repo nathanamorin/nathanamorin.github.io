@@ -8,7 +8,7 @@ description: Series that highlights developer tools (Github Actions Post to PR)
 
 ## Github Actions Post to PR
 
-![Github Actions Post to PR Image](https://user-images.githubusercontent.com/7506174/107294786-1a7e5100-6a3c-11eb-8fd9-2e161d007cf6.png){:class="img-responsive" align="right" height="500"}
+![Github Actions Post to PR Image](https://user-images.githubusercontent.com/7506174/107294786-1a7e5100-6a3c-11eb-8fd9-2e161d007cf6.png){:align="right" style="max-width: 50%"}
 
 
 [Github Actions Post to PR](https://github.com/EliLillyCo/github-actions-post-to-pr) is a Github Action I wrote & OpenSourced in my job at Lilly.
