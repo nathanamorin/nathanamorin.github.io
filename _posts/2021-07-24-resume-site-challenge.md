@@ -35,3 +35,5 @@ I created a user with admin access (can restrict this later) in AWS console & se
 All the code for the solution can be found at https://github.com/nathanamorin/resume-challenge
 
 I will be adding posts detialing the different components of CDK & how using CDK can simplify creation of resources in AWS.
+
+The final website can be found at https://resume.nathanmorin.com/
