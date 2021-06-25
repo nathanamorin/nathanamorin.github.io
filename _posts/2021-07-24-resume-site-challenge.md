@@ -16,7 +16,7 @@ To keep it simple :), I took my resume I keep in Google Docs & exported it as an
 
 To help with the later CI process, I will be using [AWS CDK](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html).  The AWS CDK has proved very useful in professional projects & will simplify the AWS deployment process for this app.  I will be useing the python CDK flavor.
 
-Following the CDK getting started guide (https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html).
+Following the [CDK getting started guide](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html).
 
 I'm on Mac, so I ..
 
@@ -32,8 +32,8 @@ I created a user with admin access (can restrict this later) in AWS console & se
 
 ### The solution
 
-All the code for the solution can be found at https://github.com/nathanamorin/resume-challenge
+All the code for the solution can be found at [nathanamorin/resume-challenge](https://github.com/nathanamorin/resume-challenge)
 
 I will be adding posts detialing the different components of CDK & how using CDK can simplify creation of resources in AWS.
 
-The final website can be found at https://resume.nathanmorin.com/
+The final website can be found at [resume.nathanmorin.com](https://resume.nathanmorin.com/)
