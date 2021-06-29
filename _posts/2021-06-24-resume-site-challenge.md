@@ -52,7 +52,7 @@ I created a user with admin access to start (after finding what permissions are 
 
 This sets up the basic infra deploy environment for the app.  More posts will follow diving into details on each infra component defined in the CDK as well as the Github Actions CI/CD automation.
 
-+ (coming soon) CDK Basics
++ [CDK Intro](/articles/cdk-intro)
 + (coming soon) Connecting components with the CDK
 + (coming soon) Lambda testing with Localstack
 + (coming soon) E2E deploying a CDK app with Github Actions
